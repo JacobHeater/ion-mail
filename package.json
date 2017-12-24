@@ -1,0 +1,49 @@
+{
+  "name": "ion-mail",
+  "version": "1.0.0",
+  "description": "An email client build on top of ElectronJS that is build with extensibility in mind.",
+  "main": "./bin/main.js",
+  "watch": {
+    "launch": {
+      "patterns": [
+        "src"
+      ],
+      "extensions": "ts,html,css",
+      "quiet": false
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "views": "copyfiles ./src/**/*.html ./src/**/*.css bin -u 1",
+    "launch": "npm run build && electron .",
+    "build": "tsc && npm run views",
+    "watch": "npm-watch launch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JacobHeater/ion-mail.git"
+  },
+  "keywords": [
+    "Email",
+    "ElectronJS",
+    "IMAP",
+    "SMTP",
+    "JavaScript",
+    "Node"
+  ],
+  "author": "Jacob Heater",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JacobHeater/ion-mail/issues"
+  },
+  "homepage": "https://github.com/JacobHeater/ion-mail#readme",
+  "devDependencies": {
+    "copyfiles": "^1.2.0",
+    "electron": "^1.7.10",
+    "eslint": "^4.14.0",
+    "npm-watch": "^0.3.0",
+    "tslint": "^5.8.0",
+    "tslint-config-unional": "^0.8.0",
+    "typescript": "^2.6.2"
+  }
+}
