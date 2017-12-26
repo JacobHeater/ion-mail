@@ -18,6 +18,9 @@ import {
 import {
   Inbox
 } from '../pages/inbox/inbox';
+import { 
+  Message 
+} from '../pages/message/message';
 import {
   routing
 } from './app.routes';
@@ -32,10 +35,11 @@ import {
   ],
   declarations: [
     App,
-    Inbox
+    Inbox,
+    Message
   ],
   bootstrap: [App]
 })
 export class AppModule {
 
-}
+};

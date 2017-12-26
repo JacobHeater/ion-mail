@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <base href="./" />
     <meta charset="UTF-8" />
     <title>Ion Mail</title>
   </head>
 
   <body>
+    <ion-app></ion-app>
+    <script src="../node_modules/zone.js/dist/zone.js"></script>
     <script>
       const { platformBrowserDynamic } = require('@angular/platform-browser-dynamic');
       const { AppModule } = require('./app/app.module');
