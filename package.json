@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "An email client build on top of ElectronJS that is build with extensibility in mind.",
   "main": "./bin/main.js",
+  "private": false,
   "watch": {
     "launch": {
       "patterns": [
@@ -37,6 +38,18 @@
     "url": "https://github.com/JacobHeater/ion-mail/issues"
   },
   "homepage": "https://github.com/JacobHeater/ion-mail#readme",
+  "dependencies": {
+    "@angular/common": "5.0.3",
+    "@angular/compiler": "5.0.3",
+    "@angular/compiler-cli": "5.0.3",
+    "@angular/core": "5.0.3",
+    "@angular/forms": "5.0.3",
+    "@angular/http": "5.0.3",
+    "@angular/platform-browser": "5.0.3",
+    "@angular/platform-browser-dynamic": "5.0.3",
+    "@angular/router": "^5.1.2",
+    "rxjs": "^5.5.6"
+  },
   "devDependencies": {
     "copyfiles": "^1.2.0",
     "electron": "^1.7.10",

@@ -1,10 +1,15 @@
 import { app, BrowserWindow } from 'electron';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { AppModule } from './app/app.module';
 import * as url from 'url';
 import * as path from 'path'; 
 
+// Keep a reference to window so GC doesn't
+// destroy it.
 let window : BrowserWindow | null = null;
 
 app.on('ready', () => {
+  
   window = new BrowserWindow({
     width: 800,
     height: 800
@@ -21,10 +26,7 @@ app.on('ready', () => {
     // Dereference the window object, usually you would store windows
     // in an array if your app supports multi windows, this is the time
     // when you should delete the corresponding element.
-    window = null
-  })
-});
+    window = null;
+  });
 
-if (window) {
-  app.relaunch();
-}
+});
