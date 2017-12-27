@@ -39,6 +39,7 @@
   },
   "homepage": "https://github.com/JacobHeater/ion-mail#readme",
   "dependencies": {
+    "electron": "^1.7.10",
     "@angular/common": "5.1.2",
     "@angular/compiler": "5.1.2",
     "@angular/compiler-cli": "5.1.2",
@@ -48,12 +49,13 @@
     "@angular/platform-browser": "5.1.2",
     "@angular/platform-browser-dynamic": "5.1.2",
     "@angular/router": "5.1.2",
+    "core-js": "^2.5.3",
     "rxjs": "5.5.6",
     "sw-toolbox": "3.6.0",
+    "systemjs": "^0.20.19",
     "zone.js": "0.8.18"
   },
   "devDependencies": {
-    "electron": "^1.7.10",
     "eslint": "^4.14.0",
     "fs-extra": "^5.0.0",
     "glob": "^7.1.2",

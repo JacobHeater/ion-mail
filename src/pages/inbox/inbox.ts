@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  templateUrl: './pages/inbox/inbox.html',
+  templateUrl: './bin/pages/inbox/inbox.html',
   selector: 'ion-inbox'
 })
 export class Inbox {

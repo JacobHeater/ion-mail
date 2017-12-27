@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'ion-app',
-  templateUrl: './app/app.html'
+  templateUrl: './bin/app/app.component.html'
 })
 export class App {
 
