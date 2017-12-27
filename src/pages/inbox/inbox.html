@@ -1,0 +1,8 @@
+<div class="inbox-container">
+  <h1>Inbox</h1>
+  <div class="message-list">
+    <nav *ngFor="let message of getMailItems()">
+      <a [routerLink]="['/message', message]">Mail Item {{ message }}</a>
+    </nav>
+  </div>
+</div>

@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "An email client build on top of ElectronJS that is build with extensibility in mind.",
   "main": "./bin/main.js",
+  "private": false,
   "watch": {
     "launch": {
       "patterns": [
@@ -14,7 +15,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "views": "copyfiles ./src/**/*.html ./src/**/*.css bin -u 1",
+    "views": "node ./tasks/copy-views.js",
     "launch": "npm run build && electron .",
     "build": "tsc && npm run views",
     "watch": "npm-watch launch"
@@ -37,13 +38,30 @@
     "url": "https://github.com/JacobHeater/ion-mail/issues"
   },
   "homepage": "https://github.com/JacobHeater/ion-mail#readme",
-  "devDependencies": {
-    "copyfiles": "^1.2.0",
+  "dependencies": {
     "electron": "^1.7.10",
+    "@angular/common": "5.1.2",
+    "@angular/compiler": "5.1.2",
+    "@angular/compiler-cli": "5.1.2",
+    "@angular/core": "5.1.2",
+    "@angular/forms": "5.1.2",
+    "@angular/http": "5.1.2",
+    "@angular/platform-browser": "5.1.2",
+    "@angular/platform-browser-dynamic": "5.1.2",
+    "@angular/router": "5.1.2",
+    "core-js": "^2.5.3",
+    "rxjs": "5.5.6",
+    "sw-toolbox": "3.6.0",
+    "systemjs": "^0.20.19",
+    "zone.js": "0.8.18"
+  },
+  "devDependencies": {
     "eslint": "^4.14.0",
+    "fs-extra": "^5.0.0",
+    "glob": "^7.1.2",
     "npm-watch": "^0.3.0",
     "tslint": "^5.8.0",
     "tslint-config-unional": "^0.8.0",
-    "typescript": "^2.6.2"
+    "typescript": "2.4.2"
   }
 }
