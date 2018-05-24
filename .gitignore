@@ -65,3 +65,4 @@ typings/
 
 # Ignore TypeScript output from 'tsc'
 bin
+.vscode/
